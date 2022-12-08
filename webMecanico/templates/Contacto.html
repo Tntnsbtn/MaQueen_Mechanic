@@ -1,0 +1,175 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'CSS/Style.css' %}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css">
+  <script src="https://kit.fontawesome.com/6a2eed0565.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+
+  <title>Contacto</title>
+
+</head>
+
+<body>
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-toggler-sm sticky-top ">
+    <div class="container-fluid" id="imgFondo10">
+      <a class="navbar-brand" href="{% url 'INDEX' %}">
+        <img src="{% static 'IMG/Logo.png' %}" alt="" class="rounded-pill" id="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
+        aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="{% url 'INDEX' %}">Inicio</a>
+          </li>
+          <a class="nav-link" href="{% url 'CONT' %}">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="ventanaConte10">
+    <img src="{% static 'IMG/fondo3.jpg' %}" alt="" id="imgFondo3">
+    <div id="modelContenedor10">
+      <table>
+        <tr>
+          <td>
+            <form method="dialog" action="#" id="formContacto" name="formContacto" style="color: white;">
+              <table>
+                <tr>
+                  <td colspan="3">
+                    <div id="contVentana1">
+                      <h1>Contactanos</h1>
+                      <div id="contenedorVent1">
+                        <img src="{% static 'IMG/Juan olivares(mecanico).jpg' %}" alt="" id="imgVentana1">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="col-md-12" id="contFormContacto1">
+                      <label for="txtNombreContacto" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="txtNombreContacto" name="txtNombreContacto"
+                        placeholder="Ingrese el Nombre" onkeyup="validarFormContacto1()" onblur="validarFormContacto1()"
+                        required>
+                      <div id="menjNombreContacto1" hidden>
+                        - Ingrese solo letras<br>
+                        - Minimo 3 caracteres
+                      </div>
+                    </div>
+                  <td>
+                    <div class="col-md-12" id="contFormContacto1">
+                      <label for="txtApellidoContacto" class="form-label">Apellido</label>
+                      <input type="text" class="form-control" id="txtApellidoContacto" name="txtApellidoContacto"
+                        placeholder="Ingrese el Apellido" onkeyup="validarFormContacto6()"
+                        onblur="validarFormContacto6()" required>
+                      <div id="menjApellidoContacto6" hidden>
+                        - Ingrese solo letras<br>
+                        - Minimo 3 caracteres
+                      </div>
+                    </div>
+                  </td>
+                  </td>
+                  <td>
+                    <div class="col-md-12" id="contFormContacto2">
+                      <label for="txtEmailContacto" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="txtEmailContacto" name="txtEmailContacto"
+                        placeholder="Ingrese Email" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+.com" onkeyup="validarFormContacto2()"
+                        onblur="validarFormContacto2()" required>
+                      <div id="menjNombreContacto2" hidden>
+                        - Minimo 12 caracteres
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="col-md-12" id="contFormContacto4">
+                      <label for="txtTelefonoContacto" class="form-label">Telefono</label>
+                      <input type="text" class="form-control" id="txtTelefonoContacto" name="txtTelefonoContacto"
+                        placeholder="Ingrese Nº Celular" onkeyup="validarFormContacto3()" onblur="validarFormContacto3()"
+                        required>
+                      <div id="menjNombreContacto3" hidden>
+                        - Ingrese solo numeros<br>
+                        - Minimo 8 digitos
+                      </div>
+                    </div>
+                  </td>
+                  <td style="width: 253px;"></td>
+                  <td>
+                    <div class="col-md-12" id="contFormContacto5">
+                      <label for="txtAsuntoContacto" class="form-label">Asunto</label>
+                      <input type="text" class="form-control" id="txtAsuntoContacto" name="txtAsuntoContacto"
+                        placeholder="Ingrese un Asunto" onkeyup="validarFormContacto4()" onblur="validarFormContacto4()"
+                        required>
+                      <div id="menjNombreContacto4" hidden>
+                        - Ingrese solo letras<br>
+                        - Minimo 4 caracteres
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <div class="col-md-12">
+                      <label for="menjNombreContacto5" class="form-label">Mensaje</label>
+                      <textarea type="text" class="form-control" id="txtMensajeContacto" name="txtMensajeContacto"
+                        placeholder="Ingrese un Mensaje" onkeyup="validarFormContacto5()" onblur="validarFormContacto5()"
+                        required></textarea>
+                      <div id="menjNombreContacto5" hidden>
+                        - Minimo 10 caracteres
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <div class="col-12" id="contFormContacto3">
+                      <button type="submit" class="btn btn-dark" style="margin-bottom: 15px;"
+                        onclick="datosFaltantes2()">Enviar</button>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="text-white" style="background-color: #002763; height: 100%; padding: 15px;">
+    <div style="text-align: center;">
+      Desarrollado por
+    </div>
+    <br>
+    <div style="text-align: center;">
+      Sebastian Acuña
+    </div>
+    <div style="text-align: center;">
+      Manuel Muñoz
+    </div>
+    <div style="text-align: center;">
+      Jhonatan Quiroga
+    </div>
+  </div>
+
+  <script src="{% static 'JS/ScriptsValidadores.js' %}"></script>
+</body>
+
+</html>

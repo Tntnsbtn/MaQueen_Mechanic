@@ -1,0 +1,254 @@
+/* Formulario Trabajos */
+#ventanaConte9 img{
+    width: 100%;
+    height: 800px;
+    opacity: 0.8;
+}
+
+#ventanaConte9{
+    position: relative;
+}
+
+#modelContenedor9{
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#modelContenedor9 table{
+    margin: auto;
+    align-items: center;
+    height: 100%;
+}
+
+#formTrabajo table{
+    width: 700px;
+}
+
+#contFormTrabajo1{
+    padding: 30px 60px 30px 0;
+}
+
+#contFormTrabajo2{
+    padding: 30px 0 30px 0;
+}
+
+#contFormTrabajo3{
+    padding: 30px 0 0 0;
+}
+
+#txtDetalle{
+    height: 100px;
+}
+
+#menjNombreTrabajo1{
+    position: absolute; 
+    top: 105px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 400;
+}
+
+#menjNombreTrabajo2{
+    position: absolute; 
+    top: 105px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 400;
+}
+
+#menjNombreTrabajo3{
+    position: absolute; 
+    top: 105px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 400;
+}
+
+#menjNombreTrabajo4{
+    position: absolute; 
+    top: 105px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 400;
+}
+
+#menjNombreTrabajo5{
+    position: absolute; 
+    top: 135px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 400;
+}
+
+/* Formulario Registro */
+#menjNombreRegistro1{
+    position: absolute; 
+    top: 70px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 500;
+}
+
+#menjNombreRegistro2{
+    position: absolute; 
+    top: 55px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 500;
+}
+
+#menjNombreRegistro3{
+    position: absolute; 
+    top: 55px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 500;
+}
+
+#menjNombreRegistro4{
+    position: absolute; 
+    top: 55px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 500;
+}
+
+#menjNombreRegistro5{
+    position: absolute; 
+    top: 55px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 500;
+}
+
+#menjNombreRegistro6{
+    position: absolute; 
+    top: 55px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 500;
+}
+
+/* Formulario Contacto */
+#imgFondo3{
+    width: 100%;
+    height: 1100px;
+    opacity: 0.8;
+}
+
+#ventanaConte10{
+    position: relative;
+}
+
+#modelContenedor10{
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#modelContenedor10 table{
+    margin: auto;
+    align-items: center;
+    height: 100%;
+}
+
+#imgVentana1{
+    width: 500px;
+    height: 400px;
+    border: solid 5px goldenrod;
+    border-radius: 50px;
+}
+#contVentana1 h1 {
+    text-align: center;
+    color: goldenrod;
+
+}
+
+#contenedorVent1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#formContacto table{
+    width: 700px;
+}
+
+
+#contFormContacto1{
+    padding: 30px 60px 30px 0;
+}
+
+#contFormContacto2{
+    padding: 30px 0 30px 0;
+}
+
+#contFormContacto3{
+    padding: 30px 0 0 0;
+}
+
+#contFormContacto4{
+    padding: 30px 60px 60px 0;
+}
+
+#contFormContacto5{
+    padding: 30px 0 60px 0;
+}
+
+#txtMensajeContacto{
+    height: 100px;
+}
+
+#menjNombreContacto1{
+    position: absolute; 
+    top: 105px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 400;
+}
+
+#menjNombreContacto2{
+    position: absolute; 
+    top: 105px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 400;
+}
+
+#menjNombreContacto3{
+    position: absolute; 
+    top: 105px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 400;
+}
+
+#menjNombreContacto4{
+    position: absolute; 
+    top: 105px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 400;
+}
+
+#menjNombreContacto5{
+    position: absolute; 
+    top: 135px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 400;
+}
+
+#menjApellidoContacto6{
+    position: absolute; 
+    top: 105px; 
+    color: red; 
+    z-index: 10;
+    font-weight: 400;
+}
+

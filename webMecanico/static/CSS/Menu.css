@@ -1,0 +1,24 @@
+#logo{
+    width: 50px;
+}
+
+#btnRegistrar{
+    margin: 5px;
+}
+
+#btnRegistrar button{
+    border-color: goldenrod;
+}
+
+#btnIniciarSesion{
+    margin: 5px; 
+    margin-right: 10px;
+}
+
+#btnIniciarSesion button{
+    border-color: goldenrod;
+}
+
+#btnBuscar button{
+    border-color: goldenrod;
+}

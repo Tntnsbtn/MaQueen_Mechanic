@@ -1,0 +1,21 @@
+@import url(Bienvenida.css);
+@import url(Menu.css);
+@import url(Carrusel.css);
+@import url(Ventanilla.css);
+@import url(BannerMarcas.css);
+@import url(Categorias.css);
+@import url(Fooster.css);
+@import url(estilito.css);
+@import url(fondo_contacto.css);
+@import url(Formularios.css);
+@import url(userAPI.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(109, 109, 109);;
+}

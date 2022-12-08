@@ -1,0 +1,16 @@
+#itemCarrusel1 img{
+    width: 100%;
+    opacity: 0.5;
+}
+
+#objetivo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#definicionObjetivo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}

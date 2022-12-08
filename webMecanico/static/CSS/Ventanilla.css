@@ -1,0 +1,655 @@
+/*.ventana{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0, 0.5);
+    transition: all 500ms ease;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.ventContenedor{
+    widows: 400px;
+    height: 300px;
+    margin: auto;
+    background: white;
+    box-shadow: 1px 7px 25px rgba(0, 0, 0, 0, 0.6);
+    transition: all 500ms ease;
+    position: relative;
+}*/
+
+/* Ventanilla 1 */
+#model1 header{
+    padding: 10px;
+    background: #ffc107;
+    color: rgb(201, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+#simboloCerrar{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: rgb(236, 0, 0);
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#model1::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model1{
+    max-width: 50ch;
+    max-height: 45ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 3px rgb(201, 0, 0) solid;
+    width: 100%;
+    height: 100%;
+}
+
+#modelContenedor1{
+    padding: 30px;
+    
+}
+
+#modelContenido1{
+    background-color: #cfcfcf;
+}
+
+#modelEmail{
+    padding: 10px 10px 0 10px;
+}
+
+#modelEmail input{
+    border-radius: 10px;
+}
+
+#modelPassword{
+    padding: 0 10px 10px 10px;
+}
+
+#modelPassword input{
+    border-radius: 10px;
+}
+
+#btnModel1 button{
+    justify-content: end;
+}
+
+/* Ventanilla 2 */
+#model2{
+    max-width: 50ch;
+    max-height: 97ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 3px rgb(201, 0, 0) solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model2::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+
+#model2 header{
+    padding: 10px;
+    background: #ffc107;
+    color: rgb(201, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+#modelNombre{
+    padding: 15px 10px 5px 10px;
+}
+
+#modelNombre input{
+    border-radius: 10px;
+}
+
+#modelApellido{
+    padding: 0 10px 5px 10px;
+}
+
+#modelApellido input{
+    border-radius: 10px;
+}
+
+#modelEdad{
+    padding: 0 10px 5px 10px;
+}
+
+#modelEdad input{
+    border-radius: 10px;
+}
+
+#modelEmail2{
+    padding: 0 10px 5px 10px;
+}
+
+#modelEmail2 input{
+    border-radius: 10px;
+}
+
+#modelRegion{
+    padding: 0 10px 5px 10px;
+}
+
+#modelRegion select{
+    border-radius: 10px;
+}
+
+#modelComuna{
+    padding: 0 10px 5px 10px;
+}
+
+#modelComuna select{
+    border-radius: 10px;
+}
+
+#modelGenero{
+    padding: 0 10px 5px 10px;
+}
+
+#modelGenero select{
+    border-radius: 10px;
+}
+
+#modelPassword2{
+    padding: 0 10px 5px 10px;
+}
+
+#modelPassword2 input{
+    border-radius: 10px;
+}
+
+#modelPassword3{
+    padding: 0 10px 25px 10px;
+}
+
+#modelPassword3 input{
+    border-radius: 10px;
+}
+
+/* Ventanilla 3 */
+#model3{
+    max-width: 128ch;
+    max-height: 74ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px #002763 solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model3::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model3 header{
+    padding: 10px;
+    background: #002763;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+#imgNissan1{
+    cursor: pointer;
+}
+
+#ventanaConte1 img{
+    width: 100%;
+    height: 570px;
+    opacity: 0.3;
+}
+
+#ventanaConte1{
+    position: relative;
+}
+
+#modelContenedor2{
+    position: absolute;
+    top: 0;
+    padding: 20px;
+}
+
+#modelTextCentro{
+    text-align: center;
+}
+
+.modelTextLetra{
+    color: #002763;
+    font-weight: 500;
+}
+
+/* Ventanilla 4 */
+#model4{
+    max-width: 128ch;
+    max-height: 74ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px #002763 solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model4::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model4 header{
+    padding: 10px;
+    background: #002763;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ventanilla 5 */
+#model5{
+    max-width: 128ch;
+    max-height: 74ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px #002763 solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model5::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model5 header{
+    padding: 10px;
+    background: #002763;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ventanilla 6 */
+#model6{
+    max-width: 128ch;
+    max-height: 74ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px #002763 solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model6::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model6 header{
+    padding: 10px;
+    background: #002763;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ventanilla 7 */
+#model7{
+    max-width: 128ch;
+    max-height: 74ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px #002763 solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model7::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model7 header{
+    padding: 10px;
+    background: #002763;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ventanilla 8 */
+#model8{
+    max-width: 128ch;
+    max-height: 74ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px #002763 solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model8::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model8 header{
+    padding: 10px;
+    background: #002763;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ventanilla 9 */
+#model9{
+    max-width: 128ch;
+    max-height: 74ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px #002763 solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model9::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model9 header{
+    padding: 10px;
+    background: #002763;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ventanilla 10 */
+#model10{
+    max-width: 128ch;
+    max-height: 74ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px #002763 solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model10::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model10 header{
+    padding: 10px;
+    background: #002763;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ventanilla 11 */
+#model11{
+    max-width: 128ch;
+    max-height: 74ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px #002763 solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model11::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model11 header{
+    padding: 10px;
+    background: #002763;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ventanilla 12 */
+#model12{
+    max-width: 128ch;
+    max-height: 74ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px #002763 solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model12::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model12 header{
+    padding: 10px;
+    background: #002763;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ventanilla 13 */
+#model13{
+    max-width: 128ch;
+    max-height: 74ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px #002763 solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model13::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model13 header{
+    padding: 10px;
+    background: #002763;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ventanilla 14 */
+#model14{
+    max-width: 128ch;
+    max-height: 74ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px #002763 solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model14::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model14 header{
+    padding: 10px;
+    background: #002763;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ventanilla 15 */
+#model15{
+    max-width: 128ch;
+    max-height: 74ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px rgb(141, 0, 0) solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model15::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model15 header{
+    padding: 10px;
+    background: rgb(141, 0, 0);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+#imgModelCatego{
+    width: 100%;
+    height: 570px;
+    opacity: 0.3;
+}
+
+#ventanaConte2{
+    position: relative;
+}
+
+#modelContenedor3{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    align-items: center;
+}
+
+#infoMantencion{
+    padding-top: 60px;
+}
+
+#btnCerrar0{
+    padding-bottom: 30px;
+}
+
+#tituloCateg{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(141, 0, 0);
+    padding-bottom: 20px;
+}
+
+/* Ventanilla 16 */
+#model16{
+    max-width: 128ch;
+    max-height: 74ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px rgb(141, 0, 0) solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model16::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model16 header{
+    padding: 10px;
+    background: rgb(141, 0, 0);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ventanilla 17 */
+#model17{
+    max-width: 128ch;
+    max-height: 74ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px rgb(141, 0, 0) solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model17::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model17 header{
+    padding: 10px;
+    background: rgb(141, 0, 0);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ventanilla 18 */
+#model18{
+    max-width: 128ch;
+    max-height: 74ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px rgb(141, 0, 0) solid;
+    width: 100%;
+    height: 100%;
+}
+
+#model18::backdrop{
+    background: rgba(0, 0, 0, .55);
+}
+
+#model18 header{
+    padding: 10px;
+    background: rgb(141, 0, 0);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}

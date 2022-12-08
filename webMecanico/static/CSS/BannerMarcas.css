@@ -1,0 +1,18 @@
+
+/* Marca Nissan */
+#card1{
+    padding: 160px 0 160px 0;
+}
+
+#textCard1{
+    background-color: #002763; 
+    color: white;
+}
+
+#card1 div img{
+    cursor: pointer;
+}
+
+#model1 img{
+    opacity: 0.5;
+}

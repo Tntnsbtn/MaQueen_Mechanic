@@ -1,0 +1,383 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'CSS/Style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css">
+    <script src="https://kit.fontawesome.com/6a2eed0565.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <title>Taller Mecanico</title>
+</head>
+
+<body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-toggler-sm sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'INDEX' %}">
+                <img src="{% static 'IMG/Logo.png' %}" alt="" class="rounded-pill" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
+                aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'INDEX' %}">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'CONT' %}">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" id="btnRegistrar">
+                    <button class="btn btn-outline-warning" type="button" onclick="abrirRegistrar()">Registrate</button>
+                </form>
+                <form class="d-flex" id="btnIniciarSesion">
+                    <button class="btn btn-outline-warning" type="button" onclick="abrirIniciarSesion()">Iniciar
+                        Sesion</button>
+
+                </form>
+                <form class="d-flex" id="btnBuscar">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-warning" type="button">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <div id="principal" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#principal" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#principal" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#principal" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="itemCarrusel1">
+                <img src="{% static 'IMG/taller1.jpeg' %}" alt="Los Angeles" class="d-block">
+                <div class="carousel-caption">
+                    <table>
+                        <tr>
+                            <td id="objetivo">
+                                <h2>Objetivo</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="definicionObjetivo">
+                                <p> Nuestra mision como empresa es entregar la mejor calidad de servicio a nuestros
+                                    clientes,
+                                    si bien somos una empresa pequeña, eso no es un impedimento para que nosotros
+                                    entreguemos un excelente servicio. <br> Queremos ser una de las mejores empresas
+                                    en prestar el servicio de Reparacion,
+                                    Mantencion, Tunning y revision de Circuiteria. <br> Contamos con una amplia gama de
+                                    herramientas
+                                    para asi poder detectar las fallas de los vehiculos en el menor tiempo posible.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="carousel-item" id="itemCarrusel1">
+                <img src="{% static 'IMG/taller2.png' %}" alt="Chicago" class="d-block">
+                <div class="carousel-caption">
+                    <table>
+                        <tr>
+                            <td id="objetivo">
+                                <h2>Ubicacion</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="definicionObjetivo">
+                                <p>
+                                    Nos encontramos en Av. Gabriela Poniente 7569, Puente Alto.
+                                    Si necesitas contactarnos, puedes llamar al siguiente numero 6004009687
+                                    o puedes escribirnos al numero de Whatsapp +569 678 00 381
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="carousel-item" id="itemCarrusel1">
+                <img src="{% static 'IMG/taller3.jpg' %}" alt="New York" class="d-block">
+                <div class="carousel-caption">
+                    <table>
+                        <tr>
+                            <td id="objetivo">
+                                <h2>Quienes Somos</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="definicionObjetivo">
+                                <p> Somos una empresa pequeña pero competitiva, ya que, poseemos una gran variedad
+                                    de herramientas y personal calificado para realizar cualquier tipo de trabajo en un
+                                    acortado tiempo. <br> A medida que ha pasado el tiempo, hemos ido creciendo
+                                    considerablemente hasta el punto de ser una empresa competitiva y eficiente.
+                                    <br> Te invitamos a que recorras nuestra pagina WEB en donde podras ver algunos
+                                    de nuestros trabajo.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#principal" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#principal" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Bienvenida -->
+    <div class="bg-dark" id="bienvenida">
+        <table>
+            <tr>
+                <td id="titulo">
+                    Bienvenido a Mcqueen Mechanic
+                </td>
+            </tr>
+            <tr>
+                <td id="indicacion">
+                    Haz click en las marcas para saber mas respecto al trabajo que realizamos
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Ventanillas -->
+    <dialog id="model1">
+        <header>
+            <h4>Iniciar Sesion</h4>
+        </header>
+        <label for="btnCerrar1" id="simboloCerrar">X</label>
+        <div class="container mt-3" id="modelContenedor1">
+            <form action="#" method="dialog">
+                <div id="modelContenido1">
+                    <div class="form-floating mb-2 mt-3" id="modelEmail">
+                        <input type="email" class="form-control" id="txtEmailSesion" placeholder="Correo" name="txtEmailSesion" required>
+                        <label for="txtEmailSesion">Correo</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3" id="modelPassword">
+                        <input type="password" class="form-control" id="txtPassword3" placeholder="Contraseña" name="txtPassword3"
+                            required>
+                        <label for="txtPassword3">Contraseña</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="InicarSesion()">Entrar</button>
+                <button type="button" class="btn btn-primary" id="btnCerrar1"
+                    onclick="cerrarIniciarSesion()">Cerrar</button>
+            </form>
+        </div>
+    </dialog>
+    <dialog id="model2">
+        <header>
+            <h4>Registro</h4>
+        </header>
+        <label for="btnCerrar2" id="simboloCerrar">X</label>
+        <div class="container mt-3" id="modelContenedor1">
+            <form method="dialog" action="#" id="formRegistro" name="formRegistro">
+                <div id="modelContenido1">
+                    <div class="form-floating mb-2 mt-3" id="modelNombre">
+                        <input type="text" class="form-control" id="txtNombre" placeholder="Nombre" name="txtNombre"
+                            onkeyup="validarFormRegistro1()" onblur="validarFormRegistro1()" required>
+                        <label for="txtNombre">Nombre</label>
+                        <div id="menjNombreRegistro1" hidden>
+                            - Ingrese solo letras. Minimo 2 caracteres
+                        </div>
+                    </div>
+                    <div class="form-floating mt-3 mb-3" id="modelApellido">
+                        <input type="text" class="form-control" id="txtApellido" placeholder="Apellido"
+                            name="txtApellido" onkeyup="validarFormRegistro2()" onblur="validarFormRegistro2()"
+                            required>
+                        <label for="txtApellido">Apellido</label>
+                        <div id="menjNombreRegistro2" hidden>
+                            - Ingrese solo letras. Minimo 2 caracteres
+                        </div>
+                    </div>
+                    <div class="form-floating mb-2 mt-3" id="modelEdad">
+                        <input type="number" class="form-control" id="txtEdad" placeholder="Edad" name="txtEdad"
+                            min="18" max="90" onkeyup="validarFormRegistro3()" onblur="validarFormRegistro3()" required>
+                        <label for="txtEdad">Edad</label>
+                        <div id="menjNombreRegistro3" hidden>
+                            - Usted debe ser mayor de edad
+                        </div>
+                    </div>
+                    <div class="form-floating mt-3 mb-3" id="modelEmail2">
+                        <input type="email" class="form-control" id="txtEmail" placeholder="Correo" name="txtEmail"
+                            pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+.com" title="Ejemplo: mac_mecanico@example.com"
+                            onkeyup="validarFormRegistro4()" onblur="validarFormRegistro4()" required>
+                        <label for="txtEmail">Correo</label>
+                        <div id="menjNombreRegistro4" hidden>
+                            - Ejemplo: mac_mecanico@example.com
+                        </div>
+                    </div>
+                    <div id="modelRegion">
+                        <select class="form-select" aria-label="Default select example" id="cbxregion"
+                            onchange="tipoRegion()">
+                            <option value="0" id="selecRegion" selected>Seleccione una Region</option>
+                            <option value="1">Region Metropolitana</option>
+                            <option value="2">O'Higgins</option>
+                            <option value="3">Valparaiso</option>
+                        </select>
+                    </div>
+                    <div id="modelComuna">
+                        <select class="form-select" aria-label="Default select example" id="cbxcomuna"
+                            onchange="activarGenero()" disabled>
+                            <option id="selecComuna" selected>Seleccione una Comuna</option>
+                        </select>
+                    </div>
+                    <div id="modelGenero">
+                        <select class="form-select" aria-label="Default select example" id="cbxgenero"
+                            onchange="activarBtnRegistrar()" disabled>
+                            <option value="0" id="selecGenero" selected>Seleccione un Genero</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Femenino</option>
+                        </select>
+                    </div>
+                    <div class="form-floating mt-3 mb-3" id="modelPassword2">
+                        <input type="password" class="form-control" id="txtPassword" placeholder="Contraseña"
+                            name="txtPassword" onkeyup="validarFormRegistro5()" onblur="validarFormRegistro5()"
+                            required>
+                        <label for="txtPassword">Contraseña</label>
+                        <div id="menjNombreRegistro5" hidden>
+                            - Ingrese minimo 8 caracteres
+                        </div>
+                    </div>
+                    <div class="form-floating mt-3 mb-3" id="modelPassword3">
+                        <input type="password" class="form-control" id="txtPassword2" placeholder="Confirmar Contraseña"
+                            name="txtPassword2" onkeyup="validarFormRegistro6()" onblur="validarFormRegistro6()"
+                            required>
+                        <label for="txtPassword2">Confirmar Contraseña</label>
+                        <div id="menjNombreRegistro6" hidden>
+                            - Las contraseñas no coinciden
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="datoFaltante()" id="btnRegi"
+                    disabled>Registrarse</button>
+                <button type="button" class="btn btn-primary" id="btnCerrar2"
+                    onclick="cerrarRegistrar()">Cerrar</button>
+            </form>
+        </div>
+    </dialog>
+
+    <!-- Banner Marcas -->
+    <div style="background-color: #ffc107;" id="BannerMarcas">
+        <table style="margin: auto;">
+            <tr>
+                <td style="width: 600px; height: 400px;">
+                    <div id="banner" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="{% url 'NISSAN' %}" target="trabajos">
+                                    <img src="{% static 'IMG/banner1.jpg' %}" alt="Los Angeles" class="d-block" style="width:100%">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="{% url 'CHEVRO' %}" target="trabajos">
+                                    <img src="{% static 'IMG/banner2.jpg' %}" alt="Chicago" class="d-block" style="width:100%">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="{% url 'HONDA' %}" target="trabajos">
+                                    <img src="{% static 'IMG/banner3.jpg' %}" alt="New York" class="d-block" style="width:100%">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="{% url 'CATEG' %}" target="trabajos">
+                                    <img src="{% static 'IMG/banner6.jpg' %}" alt="New York" class="d-block" style="width:100%">
+                                </a>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#banner"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#banner"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- consumo de api -->
+    <div class="bg-dark" style="height: 30px;" id="userApi">
+        <table>
+            <tr>
+                <td style="width: 450px">Utilidad publica en caso de necesitar importar sus repuestos:</td>
+                <th>Dolar => $</th>
+                <td style="width: 90px">
+                    <div id="dolar">
+                </td>
+                <th>Euro => $</th>
+                <td style="width: 90px">
+                    <div id="euro">
+                </td>
+                <td style="width: 60px"> Otros:</td>
+                <th>UTM => $</th>
+                <td style="width: 90px">
+                    <div id="utm">
+                </td>
+                <th>IPC => $</th>
+                <td style="width: 90px">
+                    <div id="ipc">
+                </td>
+                <th>UF => $</th>
+                <td>
+                    <div id="uf">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Iframe -->
+    <div id="iframeContenedor">
+        <iframe name="trabajos" src="{% url 'CATEG' %}"></iframe>
+    </div>
+
+    <!-- Fooster -->
+    <div class="text-white" style="background-color: #002763; height: 100%; padding: 15px;">
+        <div style="text-align: center;">
+            Desarrollado por
+        </div>
+        <br>
+        <div style="text-align: center;">
+            Sebastian Acuña
+        </div>
+        <div style="text-align: center;">
+            Manuel Muñoz
+        </div>
+        <div style="text-align: center;">
+            Jhonatan Quiroga
+        </div>
+    </div>
+
+    <script src="{% static 'JS/ScripPrincipal.js' %}"></script>
+    <script src="{% static 'JS/ScriptsValidadores.js' %}"></script>
+    <script src="{% static 'JS/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'JS/ScriptsApis.js' %}"></script>
+
+</body>
+
+</html>

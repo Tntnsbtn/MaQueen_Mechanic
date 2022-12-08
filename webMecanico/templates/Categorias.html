@@ -1,0 +1,671 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="{% static 'CSS/Style.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cateContenedor">
+        <div class="imgContenido" id="imgMantencion">
+            <img src="{% static 'IMG/mantencion2.jpg' %}" alt="">
+            <div id="textContenido">
+                Mantencion
+            </div>
+        </div>
+        <div class="imgContenido" id="imgReparacion">
+            <img src="{% static 'IMG/reparacion.jpg' %}" alt="">
+            <div id="textContenido">
+                <label>Reparacion</label>
+            </div>
+        </div>
+        <div class="imgContenido" id="imgTunning">
+            <img src="{% static 'IMG/tunning2.jpg' %}" alt="">
+            <div id="textContenido">
+                <label>Tunning</label>
+            </div>
+        </div>
+        <div class="imgContenido" id="imgCircuito">
+            <img src="{% static 'IMG/electrico.jpg' %}" alt="">
+            <div id="textContenido">
+                <label>Circuiteria</label>
+            </div>
+        </div>
+    </div>
+
+
+    <dialog id="model15">
+        <header>
+            <h4>Servicio de Mantencion</h4>
+        </header>
+        <label for="btnCerrar1" id="simboloCerrar">X</label>
+        <div id="ventanaConte2">
+            <img src="{% static 'IMG/mantencion.jpg' %}" alt="" id="imgModelCatego">
+            <div class="container" id="modelContenedor3">
+                <div class="row">
+                    <div id="tituloCateg">
+                        <p>
+                            Profesionales
+                        </p>
+                    </div>
+                    <div class="col" id="card2">
+                        <div class="card carousel-item active" style="width: 15rem;">
+                            <img src="{% static 'IMG/mecanico1.jpg' %}" class="card-img-top" alt="...">
+                            <div class="card-body" id="textCard1">
+                                <h5 class="card-title">Juan Olivares</h5>
+                                <p class="card-text">Técnico en mecánica con 2 años de experiencia en el rubro,
+                                    especialista en cambios de
+                                    aceite y filtros</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="card2">
+                        <div class="card carousel-item active" style="width: 15rem;">
+                            <img src="{% static 'IMG/mecanico2.jpeg' %}" class="card-img-top" alt="...">
+                            <div class="card-body" id="textCard1">
+                                <h5 class="card-title">Sergio Padilla</h5>
+                                <p class="card-text">Técnico en mecánica con 1 año de experiencia en el rubro,
+                                    especialista en cambios de
+                                    pastillas de freno</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="card2">
+                        <div class="card carousel-item active" style="width: 15rem;;">
+                            <img src="{% static 'IMG/mecanico3.jpg' %}" class="card-img-top" alt="...">
+                            <div class="card-body" id="textCard1">
+                                <h5 class="card-title">Regelio Fernandez</h5>
+                                <p class="card-text">Técnico en mecánica con 3 años de experiencia en el rubro,
+                                    especialista en todas las
+                                    mantenciones a todo tipo de vehículos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="infoMantencion">
+                        <table class="table  table-info" style=" border-color: goldenrod;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tipo de Mantención</th>
+                                    <th scope="col">vehículo</th>
+                                    <th scope="col">valor</th>
+                                    <th scope="col">valor con repuesto/aceite</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pastillas de frenos delanteras</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $17.990</td>
+                                    <td>Desde $30.990</td>
+                                </tr>
+                                <tr>
+
+                                    <td>Pastillas de frenos traseras o Balatas</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $15.990</td>
+                                    <td>Desde $28.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Pastillas de frenos delanteras y traseras</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $31.990</td>
+                                    <td>Desde $40.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Cambio de Aceite</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $19.990</td>
+                                    <td>Desde $35.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Cambio de Aceite y filtro</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $25.990</td>
+                                    <td>Desde $42.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Cambio de filtro de aire</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $16.990</td>
+                                    <td>Desde $30.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Cambio de filtro de combustible</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $18.990</td>
+                                    <td>Desde $28.990</td>
+                                </tr>
+                                <!--
+                                <tr>
+                                    <td>Pastillas de frenos delanteras</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $9.990</td>
+                                    <td>Desde $27.990</td>
+                                </tr>
+                                <tr>
+
+                                    <td>Pastillas de frenos traseras</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $16.990</td>
+                                    <td>Desde $33.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Pastillas de frenos delanteras y traseras</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $27.900</td>
+                                    <td>Desde $55.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Cambio de Aceite</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $12.990</td>
+                                    <td>Desde $25.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Cambio de Aceite y filtro</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $16.990</td>
+                                    <td>Desde $46.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Cambio de filtro de aire</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $14.990</td>
+                                    <td>Desde $32.990</td>
+                                </tr>
+                                -->
+
+                                <td colspan="4">*Nota: Todos los repuestos que trabajamos son 100% originales y de la
+                                    mejor
+                                    calidad.
+                                    Los valores de cada mantencion dependera de la marca de cada vehiculo, el valor del
+                                    aceite que
+                                    prefiera y los litros a ocupar.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="btnCerrar0">
+                        <button type="button" class="btn btn-primary" id="btnCerrar1">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog id="model16">
+        <header>
+            <h4>Servicio de Reparación</h4>
+        </header>
+        <label for="btnCerrar2" id="simboloCerrar">X</label>
+        <div id="ventanaConte2">
+            <img src="{% static 'IMG/servicio reparacion.png' %}" alt="" id="imgModelCatego">
+            <div class="container" id="modelContenedor3">
+                <div class="row">
+                    <div id="tituloCateg">
+                        <p>
+                            Profesionales
+                        </p>
+                    </div>
+                    <div class="col" id="card2">
+                        <div class="card carousel-item active" style="width: 15rem;">
+                            <img src="{% static 'IMG/pedro fontilla.jpg' %}" class="card-img-top" alt="...">
+                            <div class="card-body" id="textCard1">
+                                <h5 class="card-title">Pedro Fontilla</h5>
+                                <p class="card-text">Técnico Profesional en mecánica con 3 años de experiencia en el
+                                    rubro, especialista
+                                    en motor, sistema de dirección y suspeción</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="card2">
+                        <div class="card carousel-item active" style="width: 15rem;">
+                            <img src="{% static 'IMG/cristian fuentes.jpg' %}" class="card-img-top" alt="...">
+                            <div class="card-body" id="textCard1">
+                                <h5 class="card-title">Cristian Fuentes</h5>
+                                <p class="card-text">Técnico Profesional en mecánica con 2 años de experiencia en el
+                                    rubro, especialista
+                                    en bombas de agua, combustible y sistemas de refigeración </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="card2">
+                        <div class="card carousel-item active" style="width: 15rem;;">
+                            <img src="{% static 'IMG/Daniela rojas.jpg' %}" class="card-img-top" alt="...">
+                            <div class="card-body" id="textCard1">
+                                <h5 class="card-title">Daniela Rojas</h5>
+                                <p class="card-text">Técnico Profesional en mecánica con 4 años de experiencia en el
+                                    rubro, especialista
+                                    en cajas de transmisión e inyección y/o carburación</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="infoMantencion">
+                        <table class="table  table-info" style=" border-color: goldenrod;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tipo de Reparación</th>
+                                    <th scope="col">vehículo</th>
+                                    <th scope="col">valor</th>
+                                    <th scope="col">valor con repuesto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Empaquetaduras </td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $79.990</td>
+                                    <td>Desde $94.990</td>
+                                </tr>
+                                <tr>
+
+                                    <td>Piston y Anillos de Piston</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $349.990</td>
+                                    <td>Desde $448.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Piston, Anillos de Piston y Culata</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $399.990</td>
+                                    <td>Desde $556.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Bomba de agua </td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $28.990</td>
+                                    <td>Desde $105.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Bomba de combustuble</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $28.990</td>
+                                    <td>Desde $53.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Kit Embrague</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $58.990</td>
+                                    <td>Desde $138.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Inyectores</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $129.990</td>
+                                    <td>Desde $278.990</td>
+                                </tr>
+                                <!--
+                                <tr>
+
+                                    <td>Empaquetaduras</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $36.990</td>
+                                    <td>Desde $73.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Cadena</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $47.900</td>
+                                    <td>Desde $75.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Disco y separadores de Embrague</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $82.990</td>
+                                    <td>Desde $135.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Linea de escape y Escape</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $96.990</td>
+                                    <td>Desde $246.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Disco de freno</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $94.990</td>
+                                    <td>Desde $152.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Piston, Anillos de Piston y Culata</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $394.990</td>
+                                    <td>Desde $752.990</td>
+                                </tr>
+                                -->
+                                <td colspan="4">*Nota: Todos los repuestos que trabajamos son 100% originales y de la
+                                    mejor calidad. Los
+                                    valores de cada reparación dependera de la marca de cada vehiculo, las fallas
+                                    nombradas no son las unicas,
+                                    trabajamos muchas más.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="btnCerrar0">
+                        <button type="button" class="btn btn-primary" id="btnCerrar2">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog id="model17">
+        <header>
+            <h4>Servicio de Tuning y Seguridad</h4>
+        </header>
+        <label for="btnCerrar3" id="simboloCerrar">X</label>
+        <div id="ventanaConte2">
+            <img src="{% static 'IMG/tunning.jpg' %}" alt="" id="imgModelCatego">
+            <div class="container" id="modelContenedor3">
+                <div class="row">
+                    <div id="tituloCateg">
+                        <p>
+                            Profesionales
+                        </p>
+                    </div>
+                    <div class="col" id="card2">
+                        <div class="card carousel-item active" style="width: 15rem;">
+                            <img src="{% static 'IMG/tecnico audio sebastian rebolledo.jpg' %}" class="card-img-top" alt="...">
+                            <div class="card-body" id="textCard1">
+                                <h5 class="card-title">Sebastian Rebolledo</h5>
+                                <p class="card-text">Técnico profesional en Electricidad Automotriz con 2 años de
+                                    experiencia en el
+                                    rubro, especialista en instalación de todo tipo de dispositivos de audio y video</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="card2">
+                        <div class="card carousel-item active" style="width: 15rem;">
+                            <img src="{% static 'IMG/esteban seguel.jpg' %}" class="card-img-top" alt="...">
+                            <div class="card-body" id="textCard1">
+                                <h5 class="card-title">Esteban Seguel</h5>
+                                <p class="card-text">Técnico profesional en Electricidad Automotriz con 6 años de
+                                    experiencia en el
+                                    rubro, especialista en todo tipo de dispositivos Electricos y de Seguridad</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="card2">
+                        <div class="card carousel-item active" style="width: 15rem;;">
+                            <img src="{% static 'IMG/sergio padilla (mecanico).jpg' %}" class="card-img-top" alt="...">
+                            <div class="card-body" id="textCard1">
+                                <h5 class="card-title">Sergio Padilla</h5>
+                                <p class="card-text">Técnico profesional en Electricidad Automotriz con 2 años de
+                                    experiencia en el
+                                    rubro, especialista en todo tipo de dispositivos de Seguridad</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="infoMantencion">
+                        <table class="table  table-info" style=" border-color: goldenrod;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tipo de Artefacto </th>
+                                    <th scope="col">vehículo</th>
+                                    <th scope="col">valor</th>
+                                    <th scope="col">valor con Artefacto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>Radio</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $57.990</td>
+                                    <td>Desde $86.990</td>
+                                </tr>
+                                <tr>
+
+                                    <td>Radio y Parlantes</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $85.990</td>
+                                    <td>Desde $158.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Radio (audio/video), Parlantes y Amplificación</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $99.990</td>
+                                    <td>Desde $289.990</td>
+                                </tr>
+                                <tr>
+                                    <td>GPS</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $69.990</td>
+                                    <td>Desde $106.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Corta corriente</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $9.990</td>
+                                    <td>Desde $28.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Alarma</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $30.990</td>
+                                    <td>Desde $55.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Panel de Velocidad e Iluminación </td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $118.990</td>
+                                    <td>Desde $278.990</td>
+                                </tr>
+                                <!--
+                                <tr>
+                                    <td>GPS</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $19.990</td>
+                                    <td>Desde $45.990</td>
+                                </tr>
+                                <tr>
+
+                                    <td>Corta corriente</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $19.990</td>
+                                    <td>Desde $35.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Alarma</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $17.900</td>
+                                    <td>Desde $25.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Kit completo de Seguridad</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $56.990</td>
+                                    <td>Desde $100.990</td>
+                                </tr>
+                                -->
+                                <td colspan="4">*Nota: Todos los Productos que trabajamos son 100% originales y de la
+                                    mejor calidad. Los
+                                    valores de cada instalación del artefacto dependera de la marca de cada producto.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="btnCerrar0">
+                        <button type="button" class="btn btn-primary" id="btnCerrar3">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog id="model18">
+        <header>
+            <h4>Servicios Electricos</h4>
+        </header>
+        <label for="btnCerrar4" id="simboloCerrar">X</label>
+        <div id="ventanaConte2">
+            <img src="{% static 'IMG/circuito.jpg' %}" alt="" id="imgModelCatego">
+            <div class="container" id="modelContenedor3">
+                <div class="row">
+                    <div id="tituloCateg">
+                        <p>
+                            Profesionales
+                        </p>
+                    </div>
+                    <div class="col" id="card2">
+                        <div class="card carousel-item active" style="width: 15rem;">
+                            <img src="{% static 'IMG/marcelo ubilla.jpg' %}" class="card-img-top" alt="...">
+                            <div class="card-body" id="textCard1">
+                                <h5 class="card-title">Marcelo Ubilla</h5>
+                                <p class="card-text">Técnico profesional en Electricidad Automotriz con 2 años de
+                                    experiencia en el rubro,
+                                    especialista en alternadores</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="card2">
+                        <div class="card carousel-item active" style="width: 15rem;">
+                            <img src="{% static 'IMG/macarena.jpeg' %}" class="card-img-top" alt="...">
+                            <div class="card-body" id="textCard1">
+                                <h5 class="card-title">Macarena Bueno</h5>
+                                <p class="card-text">Técnico profesional en Electricidad Automotriz con 1 año de
+                                    experiencia en el rubro,
+                                    especialista en motores de partida</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="card2">
+                        <div class="card carousel-item active" style="width: 15rem;;">
+                            <img src="{% static 'IMG/regelio fernandez (mecanico).jpg' %}" class="card-img-top" alt="...">
+                            <div class="card-body" id="textCard1">
+                                <h5 class="card-title">Regelio Fernandez</h5>
+                                <p class="card-text">Técnico en profesional en Electricidad Automotriz con 3 años de experiencia en el rubro,
+                                    especialista en computadores,
+                                    automotrices</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="infoMantencion">
+                        <table class="table  table-info" style=" border-color: goldenrod;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tipo de Reparación</th>
+                                    <th scope="col">vehículo</th>
+                                    <th scope="col">valor</th>
+                                    <th scope="col">valor con repuesto/aceite</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>Alternador</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $77.990</td>
+                                    <td>Desde $180.990</td>
+                                </tr>
+                                <tr>
+
+                                    <td>Motor de partida</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $65.990</td>
+                                    <td>Desde $158.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Pastillas de frenos delanteras y traseras</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $31.990</td>
+                                    <td>Desde $40.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Selenoide</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $49.990</td>
+                                    <td>Desde $76.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Bujias</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $10.990</td>
+                                    <td>Desde $18.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Computador</td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $156.990</td>
+                                    <td>Desde $380.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Panel de Velocidad e Iluminación </td>
+                                    <td>Automóvil</td>
+                                    <td>Desde $118.990</td>
+                                    <td>Desde $278.990</td>
+                                </tr>
+                                <!--
+                                <tr>
+                                    <td>Alternador</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $59.990</td>
+                                    <td>Desde $147.990</td>
+                                </tr>
+                                <tr>
+
+                                    <td>Motor de arranque</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $66.990</td>
+                                    <td>Desde $153.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Sensores</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $57.900</td>
+                                    <td>Desde $75.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Panel de Velocidad e Iluminación</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $112.990</td>
+                                    <td>Desde $185.990</td>
+                                </tr>
+                                <tr>
+                                    <td>Focos</td>
+                                    <td>Motocicleta</td>
+                                    <td>Desde $46.990</td>
+                                    <td>Desde $86.990</td>
+                                </tr>
+                                -->
+                                <td colspan="4">*Nota: Todos los repuestos que trabajamos son 100% originales y de la
+                                    mejor calidad. Los
+                                    valores de cada reparación electrica dependera de la marca de cada vehiculo.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="btnCerrar0">
+                        <button type="button" class="btn btn-primary" id="btnCerrar4">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <script src="{% static 'JS/ScriptCategoria.js' %}"></script>
+</body>
+
+</html>

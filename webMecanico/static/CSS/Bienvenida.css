@@ -1,0 +1,18 @@
+#bienvenida table{
+    margin: auto; 
+    color: white;
+}
+
+#titulo{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#indicacion{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
